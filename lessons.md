@@ -49,12 +49,26 @@ Add an entry whenever an LLM or agent catches you off guard. Include enough deta
 ### Week 1
 
 #### From the materials
+**Karpathy — Deep Dive into LLMs**
+LLMs predict the next token — they don't retrieve facts. This explains 
+hallucinated citations and why they miscount residues: tokenization breaks 
+sequences arbitrarily, not biologically. Prompting precision is essential. 
+One thing I'd test: maybe how prompt length influences answer precsion in differen fields or sub-fields. 
 
-<!-- Karpathy / GeneGPT notes; reflection exercise (three tasks, why hard or easy for an LLM) -->
+**GeneGPT**
+Tool use fixes hallucinations on database queries — the model stops inventing 
+gene IDs when it can look them up.
+Claim I'd verify: does this hold on less curated databases than NCBI? I'm not sure how the interaction with a database works - should check.
 
 #### Surprises
+**2026-06-06 · Claude** — Asked for an interactive visualization. 
+The output quality was unexpectedly high — felt closer to a 
+designed UI than a generated artifact.
 
-<!-- Chatbot exercise; anything else that caught you off guard -->
+**2026-05-28 · ChatGPT (free)** — Asked it to count the words in 
+a paragraph I had written. It gave a wrong number confidently. 
+Takeaway: tokenization means the model is not "counting" the 
+way a human would — it's predicting a plausible answer.
 
 ### Week 2
 
