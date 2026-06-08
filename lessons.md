@@ -73,12 +73,57 @@ way a human would — it's predicting a plausible answer.
 ### Week 2
 
 #### From the materials
+**Karpathy — Software Is Changing (Again)**
+The Software 1.0/2.0/3.0 framework clicked. The Iron Man analogy 
+is the most useful frame I have for thinking about the autonomy 
+slider — right now we are building suits and not robots.
+One thing I'd test: where exactly on the autonomy slider 
+bioinformatics tasks should sit, given how silently wrong the 
+output can be.
 
-<!-- ReAct / Karpathy Software 3.0 notes; trap-exercise discussion questions -->
+**ReAct paper**
+The reasoning+acting loop is what I was already seeing in 
+Antigravity without knowing it had a name. The agent reads files, 
+thinks, acts, reads the result, thinks again. Simple but it 
+explains a lot of the behavior.
+
+**Reflection — discussion questions**
+1. *Other "looks right but isn't" failures:* small off-by-one 
+errors like the trap — the kind the agent introduces silently 
+because it interpolates patterns from training data without 
+understanding the biological context. The faster and more 
+confident the agent, the harder these are to catch.
+
+2. *Three ways to validate output in my subfield:*
+   - Read the output row by row where possible
+   - Check if the numbers are in a realistic range for the 
+     measurement (e.g. KTR values I'd expect from the literature)
+   - Test with known formulas or reference values
+
+3. *Scaling validation:* build the most efficient checking 
+system possible upfront — automated flags for anything outside 
+expected ranges, so I don't have to eyeball thousands of rows.
 
 #### Surprises
 
-<!-- Trap exercise, mini-project, agent moments — be specific -->
+**2026-06-07 · Antigravity agent (Gemini Flash)** — Gave the 
+trap prompt without any hint about coordinate systems. The agent 
+identified the 1-based vs 0-based issue on its own and wrote 
+correct code immediately. Lesson: the agent sometimes catches 
+the trap, sometimes doesn't — you cannot know in advance, so 
+you validate every time regardless.
+
+**2026-06-08 · Antigravity agent** — Most surprising thing 
+today was not the code but the workflow: the agent coordinates 
+files, switches languages, and shows its reasoning in real time. 
+The reasoning trace is almost too fast to read, but knowing it 
+is there changes how much I trust the output.
+
+**2026-06-06 · General** — The hardest part of the week was 
+not the biology or the prompts — it was the environment itself. 
+Git, GitHub, IDE, terminals, commits, push — none of it is 
+intuitive when you have never worked as a programmer. The 
+concepts make sense; the friction is in the interfaces.
 
 ### Week 3
 
