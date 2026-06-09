@@ -129,7 +129,7 @@ concepts make sense; the friction is in the interfaces.
 
 #### From the materials
 
-<!-- Jumper lecture / AlphaFold3 paper notes -->
+<!-- Jumper lecture / CARBON reading notes -->
 
 #### Surprises
 
