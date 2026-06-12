@@ -129,11 +129,36 @@ concepts make sense; the friction is in the interfaces.
 
 #### From the materials
 
-<!-- Jumper lecture / CARBON reading notes -->
+**Jumper Nobel Lecture**
+AlphaFold solved a problem that had been open for 50 years and the key insight was using co-evolution across species
+a signal — if two positions are always mutated together across millions of sequences, they're probably in contact 
+in the 3D structure. One thing I'd test: how pLDDT changes on 
+disordered proteins, which by definition have no stable structure.
+
+**CARBON paper**
+A foundation model for DNA sequences. Similar philosophy 
+to ESM2 but for genomics. Limitations section was the 
+most useful part — the model performs well on benchmarks 
+but benchmark performance doesn't guarantee real-world utility.
+
 
 #### Surprises
 
-<!-- FM exercises, agent handling of models, validation hooks -->
+**2026-06-11 · ColabFold** — Predicted BDNF structure in 
+under 5 minutes in a browser. The visualization was 
+unexpectedly good. What surprised me most was how 
+accessible something this powerful has become.
+
+**2026-06-11 · General reflection** — You can trust the 
+model within its narrow context. But the moment you step 
+outside it — asking what the protein does in a cell, 
+how it behaves under different conditions, what 
+post-translational modifications change — the model has 
+nothing to say. The risk is forgetting where the boundary 
+is and building conclusions on top of a very narrow foundation.
+
+P.S. Exercise C — attempted, library error, agent couldn't move forward, skipped.
+
 
 ### Week 4
 
