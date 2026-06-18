@@ -164,6 +164,19 @@ P.S. Exercise C — attempted, library error, agent couldn't move forward, skipp
 
 #### From the materials
 
+**The three modes of agent-tool interaction**
+
+Mode 1 (agent writes code) is what I used for the KTR script — 
+reusable, but errors can be silent until validated.
+Mode 2 (agent runs commands directly) is faster for one-off 
+checks but leaves nothing reusable behind.
+Mode 3 (structured MCP tools) would matter if I ever needed 
+to run KTR calculations routinely on incoming patient data — 
+a typed, auditable tool instead of re-running a script by hand.
+
+For now, my work is mostly Mode 1: small, reusable scripts on 
+research datasets. Mode 3 becomes relevant only at production 
+scale, which isn't where I am yet.
 <!-- MCP / BixBench notes -->
 
 #### Surprises

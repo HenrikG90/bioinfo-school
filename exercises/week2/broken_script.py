@@ -22,11 +22,15 @@ def read_fasta(path):
             current_seq = []
         else:
             current_seq.append(line)
+    # salva l'ultima sequenza
+    if current_name:
+        records[current_name] = "".join(current_seq)
 
     if current_name:
         records[current_name] = "".join(current_seq)
 
     return records
+
 
 
 def gc_percent(sequence):

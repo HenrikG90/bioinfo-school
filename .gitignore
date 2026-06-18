@@ -205,3 +205,13 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Local test scripts (Week 4)
+search_manchia.py
+count_fasta_mode1.py
+search_bd_ml.py
+
+# Temporary output files (personal/local only)
+bd_ml_results.txt
+bd_ml_literature_table.md
+risultati_norvegesi.md
