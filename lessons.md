@@ -177,8 +177,44 @@ a typed, auditable tool instead of re-running a script by hand.
 For now, my work is mostly Mode 1: small, reusable scripts on 
 research datasets. Mode 3 becomes relevant only at production 
 scale, which isn't where I am yet.
-<!-- MCP / BixBench notes -->
 
 #### Surprises
 
-<!-- BioTerm-Bench, MCP demo, failure modes -->
+**BioTerm-Bench (simulated)** — Explored agent failure modes on 
+bioinformatics CLI tasks without prior knowledge of the tools. 
+The key insight was not the tools themselves but three universal 
+failure patterns: silent empty output, semantically inverted logic 
+that looks plausible, and confident wrong answers. These apply 
+directly to my work — an agent calculating KTR on my data could 
+produce any of these silently.
+
+**MCP (conceptual demo)** — Explored how MCP structures the 
+interaction between agent and external tool. The contrast with 
+Mode 2 is useful: MCP produces typed, auditable inputs/outputs 
+instead of raw text to parse. Setup friction was too high this 
+week — will explore in person at Brno.
+
+**Project ideas for Brno — three concrete directions:**
+
+1. *Literature Monitoring Agent* — queries PubMed on 
+"kynurenine pathway bipolar disorder temperament", filters by 
+relevance, and drafts a "gap in the literature" paragraph ready 
+for the KynTemps manuscript. Immediate real-world use.
+
+2. *Manuscript Consistency Checker* — reads my manuscript (.docx) 
+and results file (.csv) and verifies that every number cited in 
+the text (AUC, p-value, N) exactly matches the data. Catches 
+copy-paste errors before submission.
+
+3. *Metabolite Range Agent* — searches PubMed/HMDB for expected 
+plasma reference ranges for KP metabolites, compares against 
+BIPLONG values, and flags outliers with bibliographic context.
+
+**Personal feelings and difficulty**
+Personally, difficulties lie on the fact that I come from psychology, so both programming with agents
+and the biology behind some of the exercises wew a bit out of my reach. 
+The thing that felt hard this course was the environment and 
+tools — Antigravity, git, GitHub, terminal, venvs — not the concepts. Stefan's lessons were very interesting
+and understandable. Working on the materials, committing, pushing, using uv was pretty weird. 
+I hope to be able to take home some knowledge and quality, even if these are the conditions, of course. 
+Thank you for all the work!

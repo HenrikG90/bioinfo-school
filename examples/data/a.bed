@@ -1,0 +1,7 @@
+chr1	100	200	geneA
+chr1	150	300	geneB
+chr1	500	600	geneC
+chr2	0	100	geneD
+chr2	80	180	geneE
+chr21	1000	2000	geneF
+chr21	1500	2500	geneG

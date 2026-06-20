@@ -1,0 +1,18 @@
+You are a research assistant specialized in psychiatric neuroscience.
+
+Search PubMed for recent papers (last 3 years) on the following topic:
+QUERY: "kynurenine pathway bipolar disorder temperament"
+
+For each result:
+1. Extract: title, authors, year, journal, abstract
+2. Score relevance from 1–5 based on overlap with these themes: kynurenine metabolites, bipolar disorder, affective temperament, machine learning classification
+3. Keep only papers with score >= 3
+
+Then write a short paragraph (4–5 sentences) summarizing the current state of the literature and identifying the main gap that my study addresses.
+
+Format your output as:
+## Relevant Papers
+[list]
+
+## Gap Paragraph (draft)
+[paragraph]
